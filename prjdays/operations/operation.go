@@ -1,7 +1,7 @@
 package operations
 
 import (
-	"bolnitsa/customer"
+	"projects/prjdays/customer"
 	"fmt"
 	"log"
 	"math/rand"

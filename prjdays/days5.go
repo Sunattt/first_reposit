@@ -1,8 +1,8 @@
-package pointers
+package prjdays
 
 import (
-	"bolnitsa/customer"
-	"bolnitsa/operations"
+	"projects/prjdays/customer"
+	"projects/prjdays/operations"
 	"log"
 	"math/rand"
 )

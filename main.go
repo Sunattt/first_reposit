@@ -20,13 +20,20 @@ func main() {
 		fmt.Println("Нам ничего не задавали")
 	case 4:
 		fmt.Println("Бонусные задания")
-		fmt.Println(prjdays.Bonus(""))
+		prjdays.Bonus()
 		fmt.Println()
-		fmt.Println(prjdays.Fibonachi(""))
+		prjdays.Fibonachi()
 	case 5:
-		fmt.Println(prjdays.Day5())
+		prjdays.Day5()
+	case 6:
+		schoole.MiniSchoole()
+	case 7:
+		prjdays.Days7()
+		log.Println()
+		prjdays.DivideSlise()
 	default:
 		fmt.Println("Ты написал неправильное число.")
+
 	
 	}
 	log.Println("The programm game over")

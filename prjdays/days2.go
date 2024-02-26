@@ -4,12 +4,15 @@ import (
 	"fmt"
 	"math"
 )
-func Anniversary() int {
+
+func Anniversary() float64{
 	fmt.Println("Hello, It's program for finding how\nmany days are left until the anniversary.")
 	fmt.Println("How old are you?")
-	var age int
+	var age float64
 	fmt.Print("I'm ")
 	fmt.Scan(&age)
-	days := 10 - int(float64(age)*0.1 - math.Floor(float64(age) * 0.1)) // remainder
+	//days := 10 - (age % 10)
+	fmt.Println(math.Floor(age*0.1))
+	days := 10 - (age - math.Floor(age*0.1) * 10) // remainder
 	return days
 }
